@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- to display discription on browser -->
+    <meta name="description" content="">
+
+    <title>Document</title>
+
+    <!-- to link the css file
+    shortcut -> link:css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- heading tags -->
+    <h1>Apoorva</h1>
+    <h2>Sakhi</h2>
+    <h3>Divyang</h3>
+    <h4>Nandini</h4>
+    <h5>Riya</h5>
+    <h6>Manoj</h6>
+
+    <!-- <p>lorem</p> to generate random text -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium sequi natus id cupiditate consectetur neque est sapiente sit eligendi soluta quia accusamus animi, odit impedit aliquam nam fuga explicabo?</p>
+
+    <!-- <p>lorem25</p> this gives you 25 words -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod velit quos nam doloribus qui sunt quis molestias ullam repudiandae. Repudiandae repellendus enim provident magnam expedita!</p>
+
+    <!-- to open a link in different page -->
+    <a target="_blank" href="https://www.google.com/">Google</a>
+    <br><br>
+
+    <!-- to use image in website
+    alt is used to show text if image is not displayed due to some errors
+    width and height has by default px in this tag -->
+    <img width="300" height="300" src="E-R.png" alt="Home Image">
+    <br><br>
+
+    <!-- to use video in website -->
+    <video height="300" src="calc.mp4" controls>Reel</video>
+    <br><br>
+
+    <!-- table -->
+    <table>
+        <!-- caption will be shown as heading of the table -->
+        <caption>My Caption</caption>
+
+        <!-- <thead></thead> used  for headings inside the table -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+
+        <!-- <tbody></tbody> used  when there are multiple sets of data under one column name -->
+        <tr>
+            <td>Apoorva</td>
+            <td>20</td>
+            <td>KMBL</td>
+        </tr>
+        <tr>
+            <td>Sakhi</td>
+            <td>20</td>
+            <td>Surat</td>
+        </tr>
+
+        <!-- colspan  attribute adds the power of merging cells horizontally
+        rowspan attribute adds the power of merging cell vertically -->
+        <tr>
+            <td colspan="2">Riya</td>
+            <td rowspan="2">20</td>
+            <!-- <td>Vadodara</td> -->
+        </tr>
+        <tr>
+            <td>Nandini</td>
+            <td>21</td>
+            <!-- <td>Navsari</td> -->
+        </tr>
+
+        <!-- <tfoot></tfoot> used  for footers inside the table -->
+    </table>
+
+    <!-- lists -->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <!-- <ol type="A"></ol> change the type of  numbering (A, a, I, i) // default  is decimal(1) -->
+
+    <ul>
+        <li>Vanilla</li>
+        <li>Chocolate</li>
+        <li>Strawberry</li>
+    </ul>
+    <!-- <ul type="square"></ul> change  the shape of bullet points in unordered list // default is round(o)-->
+
+    <dl>
+        <!-- dt defines term and dd defines description -->
+        <dt>Favorite Color:</dt>
+        <dd>Blue is my favourite colour <br>I like blue things</dd>
+        
+        <dt>Favorite Food:</dt>
+        <dd>Pizza</dd>
+    </dl>
+
+    <!-- link the javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
