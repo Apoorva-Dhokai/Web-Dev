@@ -1,0 +1,39 @@
+.box{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid blue;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 4;
+    letter-spacing: 2;
+}
+
+.lorem{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px;
+    text-indent: 4px;
+
+    border: 2px solid red;
+    width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.c{
+    color: red;
+    color: #f00987;
+    color: rgb(red, green, blue);    /* rgb(34,65,98) */
+    color: rgba(red, green, blue, alpha);  /* rgba(34,65,98,0.98) alpha is opacity(dark/light) which ranges from 0 to 1 */
+    color: hsl(hue, saturation, lightness);    /* hsl(235,100%,50%) */
+}

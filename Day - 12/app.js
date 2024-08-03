@@ -84,4 +84,10 @@ let n = "Apoorva"
 let f = "Nandini"
 
 console.log(n.length);
+// template literals
 console.log(`My name is ${n} and my friend's name is ${f}`);
+
+let nam = "SAKHI"
+console.log(nam.slice(1,4))
+
+console.log(nam.replace("HI","SHI"))  // only first occurence will be replaced

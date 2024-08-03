@@ -1,0 +1,30 @@
+div{
+    display: inline;     /* used to make block elements inline but the below properties will not work here */
+    /* so we need to use */
+    display: inline-block;
+    width: 100%;
+    padding: 25px;
+    margin: 40px;
+
+    display: none;  /* it will remove the element as well as the space allocated in the website */
+    visibility: hidden;    /* it will only remove the element but the space will remain as it is */
+}
+
+.shdw{
+    box-shadow: 5px 5px 15px 5px black;     /* h-offset v-offset blur spread color inset */
+    text-shadow: 5px 5px 15px red;     /* h-offset v-offset blur color */
+}
+
+p{
+    /* difference b/w border and margin is that the outline is not a part of box model and hence it doesn't take space */
+    outline: 4px solid black;
+    outline-offset: 25px;    /* increase the space of outline */
+
+    /* outline can not be made curve directly it follows border */
+    border-radius: 25px;
+}
+
+nav ul li{
+    list-style: none;    /* removes bullets and can also be replaced if needed */
+    list-style-position: inside;
+}

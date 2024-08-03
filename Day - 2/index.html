@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWH-SB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simple Form</h1>
+    <!-- get is used for simple requests while post is used to send any amount of data -->
+    <form action="post">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter name">
+            <!-- <input type="text" autofocus> ---- this is used to point the cursor directly to this field when page reloads -->
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter comments here</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+    </form>
+    
+    <!-- block element -->
+    <p>This is a test para</p>
+    <a href="https://google.com">Google</a>   <!-- it is inline but used here to show div is block element and cant take same line as <a> -->
+    <div>This ia s div</div>
+    
+    <!-- inline element -->
+    <a href="https://google.com">Google</a>
+    <span>Thiis a spann</span>
+    
+    <!-- id is used to uniquely identify element but class can be used for multiple elements to provide similar functionalities -->
+    <!-- id can also be used for linking for eg. if we write #id_name at the end of any link it will go directly to that part of the page -->
+     <div class="red">
+        <h1 id="h1">Red</h1>
+        <span id="p">Red is a color at the long wavelength end of the visible spectrum</span>
+     </div>
+
+     <div class="red">
+        <h3 id="h3">Blue</h3>
+     </div>
+
+     <!-- video -->
+
+     <video height="300" src="calc.mp4" controls>Calculator</video>
+     <!-- autoplay - plays automatically when page reloads
+     loop - plays video again and again
+     muted - video is muted
+     poster -  thumbnail -->
+
+     <!-- audio -->
+
+     <audio src="audio.mp3" controls>Reel</audio>
+      <!-- autoplay - plays automatically when page reloads
+     loop - plays audio again and again
+     muted - audio is muted
+     preload - none/metadata/auto  -->
+
+     <!-- svg -->
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" strokewidth="4" fill="yellow" />
+      </svg>
+      <br>
+
+      <!-- iframe -->
+       <iframe src="https://www.chittorgarh.com/ipo/ixigo-ipo/1742/"></iframe>
+</body>
+</html>

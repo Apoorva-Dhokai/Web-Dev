@@ -1,0 +1,54 @@
+/* External CSS */
+
+/* Element Selector */
+nav {
+    background-color: black;
+}
+
+/* Class Selector */
+.red {
+    color: red;
+}
+
+/* Id Selector */
+#green{
+    color: green;
+}
+
+/* Child Selector */
+/* if only p is immediately after div inside it */
+div > p {
+    color: blue;
+}
+
+/* Descendant Selector */
+/* if p is anywhere inside div */
+div p {
+    color: yellow;
+}
+
+/* Universal Selector */
+* {
+    background-color: azure;
+}
+
+/* Pseudo Selector */
+a:visited {
+    color: purple;
+}
+
+a:link{
+    color: blue;
+}
+
+a:active{
+    color: orange;
+}
+
+a:hover{
+    color: pink;
+}
+
+p:first-child{
+    background-color: antiquewhite;
+}

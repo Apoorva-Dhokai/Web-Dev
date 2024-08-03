@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cred{
+            color: red;
+        }
+        .cprpl{
+            color: purple;
+        }
+        h1{
+            color: blue;
+        }
+        .yelo{
+            color: yellow !important;
+        }
+
+        .container{
+            font-size: 20px;
+        }
+        .container p{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cred cprpl">CSS Specificity</h1>
+
+    <!-- Cascade algorithm 
+    1) Position - if same type of selectors are used then last mentioned property will be applied eg. in above if h1 is not there then 
+        all will be class selectors so cprpl is after cred so cprpl will be used.
+    2) Specificity - if selectors are not of same type then [inline(1000)->id(100)->class/attribute(10)->element(1)->universal(0)]
+    3) Origin - from where the css comes eg. your style > browser style 
+    4) Important - highest priority eg. yelo class shown above -->
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda sequi in deleniti incidunt. Magni quidem ipsum aliquam 
+            iste id quia at accusantium, neque repudiandae exercitationem dolorem. Doloribus corrupti minima ad molestias, esse ipsam 
+            sequi.</p>
+    </div>
+
+    <!-- CSS Units
+    if we use 'px' then it can be good for our device but if the device size changes then it will be bad to see
+    'vw' and 'vh' are used for responsive design as they adjust width and height according to screen size
+
+    'em' - as seen above we set font size 20px in container so the p tag will inherit it but then in p tag we set font size 1.5em so 
+        finally the font size of p tag will be 20px * 1.5 = 30px
+    'rem' - it will multiply the value with root element -->
+</body>
+</html>
